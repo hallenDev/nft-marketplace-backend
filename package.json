@@ -1,0 +1,49 @@
+{
+   "name": "voxelx_backend",
+   "version": "0.0.1",
+   "description": "Backend code for VoxelX NFT store.",
+   "devDependencies": {
+      "@types/cors": "^2.8.12",
+      "@types/multer": "^1.4.7",
+      "@types/node": "^8.0.29",
+      "multer": "^1.4.4",
+      "ts-node": "3.3.0",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "@sendgrid/mail": "^7.7.0",
+      "@types/express-jwt": "^6.0.4",
+      "@types/jsonwebtoken": "^8.5.8",
+      "@types/node-cron": "^3.0.1",
+      "aws-sdk": "^2.1094.0",
+      "axios": "^0.25.0",
+      "body-parser": "^1.18.1",
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.1",
+      "eth-sig-util": "^3.0.1",
+      "ethereumjs-util": "^7.1.4",
+      "ethers": "^5.5.4",
+      "express": "^4.15.4",
+      "express-jwt": "^6.1.0",
+      "fbx2gltf": "^0.9.7-p1",
+      "form-data": "^4.0.0",
+      "jsonwebtoken": "^8.5.1",
+      "mysql": "^2.14.1",
+      "node-cron": "^3.0.0",
+      "obj2gltf": "^3.1.4",
+      "redis": "^4.2.0",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.41",
+      "web3-utils": "^1.7.0"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "event": "ts-node src/subscription1.ts",
+      "vxl": "ts-node src/vxl_tracking.ts",
+      "auction": "ts-node src/auction.ts",
+      "sale_end": "ts-node src/sale_end.ts",
+      "check_offer": "ts-node src/check_offer.ts",
+      "ban": "ts-node src/ban.ts",
+      "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js"
+   }
+}
